@@ -1,10 +1,74 @@
 {
-  "books": [
+  "publishers": [
     {
       "id": 1,
-      "title": "JavaScript: The Good Parts",
-      "author": "Douglas Crockford"
+      "name": "O'Reilly Media",
+      "location": "USA",
+      "founded": 1980,
+      "books_published": 2000
     },
-    { "id": 2, "title": "You Don't Know JS", "author": "Kyle Simpson" }
+    {
+      "id": 2,
+      "name": "Pearson",
+      "location": "UK",
+      "founded": 1844,
+      "books_published": 5000
+    },
+    {
+      "id": 3,
+      "name": "Penguin Random House",
+      "location": "USA",
+      "founded": 2013,
+      "books_published": 15000
+    },
+    {
+      "id": 4,
+      "name": "HarperCollins",
+      "location": "USA",
+      "founded": 1989,
+      "books_published": 10000
+    },
+    {
+      "id": 5,
+      "name": "Macmillan Publishers",
+      "location": "UK",
+      "founded": 1843,
+      "books_published": 8000
+    },
+    {
+      "id": 6,
+      "name": "Hachette Livre",
+      "location": "France",
+      "founded": 1826,
+      "books_published": 6000
+    },
+    {
+      "id": 7,
+      "name": "Simon & Schuster",
+      "location": "USA",
+      "founded": 1924,
+      "books_published": 7000
+    },
+    {
+      "id": 8,
+      "name": "Springer Nature",
+      "location": "Germany",
+      "founded": 1842,
+      "books_published": 12000
+    },
+    {
+      "id": 9,
+      "name": "Scholastic",
+      "location": "USA",
+      "founded": 1920,
+      "books_published": 4000
+    },
+    {
+      "id": 10,
+      "name": "Oxford University Press",
+      "location": "UK",
+      "founded": 1586,
+      "books_published": 10000
+    }
   ]
 }
