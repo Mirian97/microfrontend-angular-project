@@ -1,2 +1,5 @@
 <p style="background-color: blue">publisher works!</p>
 <p>Microfronted aquiii, e funfando legal</p>
+<div *ngFor="let publisher of publisherList$ | async">
+  <p>{{ publisher.name }}</p>
+</div>
