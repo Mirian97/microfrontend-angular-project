@@ -32,7 +32,7 @@ module.exports = {
       filename: "remoteEntry.js",
       exposes: {
         "./PublisherModule":
-          "./projects/mfe-app/src/app/publisher/publisher.module.ts",
+          "./projects/mfe-app/src/app/pages/publisher/publisher.module.ts",
       },
 
       // For hosts (please adjust)
