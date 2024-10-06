@@ -9,7 +9,7 @@ import { Publisher } from './../../types/publisher';
   styleUrl: './publisher.component.scss',
 })
 export class PublisherComponent implements OnInit {
-  publisherList$: Observable<Publisher[]> = new Observable<Publisher[]>(); // Sufixo $ para indicar Observable
+  publisherList$: Observable<Publisher[]> = new Observable<Publisher[]>();
 
   constructor(private publisherService: PublisherService) {}
 

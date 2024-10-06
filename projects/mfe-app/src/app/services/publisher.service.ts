@@ -14,4 +14,8 @@ export class PublisherService {
   get(): Observable<Publisher[]> {
     return this.http.get<Publisher[]>(`${this.apiUrl}/publisher`);
   }
+
+  getById(id: number): Observable<Publisher> {
+    return this.http.get<Publisher>(`${this.apiUrl}/publisher/${id}`);
+  }
 }

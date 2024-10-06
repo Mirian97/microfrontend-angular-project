@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -19,6 +19,18 @@ const routes: Routes = [
         .then((m) => m.PublisherModule)
         .catch((err) => console.error(err)),
   },
+  {
+    path: 'publisher/:id',
+    loadChildren: () =>
+      loadRemoteModule({
+        remoteEntry: 'http://localhost:4300/remoteEntry.js',
+        remoteName: 'mfeApp',
+        exposedModule: './PublisherDetailModule',
+      })
+        .then((m) => m.PublisherDetailModule)
+        .catch((err) => console.error(err)),
+  },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

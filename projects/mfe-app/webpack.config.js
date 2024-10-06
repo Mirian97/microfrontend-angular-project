@@ -33,6 +33,8 @@ module.exports = {
       exposes: {
         "./PublisherModule":
           "./projects/mfe-app/src/app/pages/publisher/publisher.module.ts",
+        "./PublisherDetailModule":
+          "./projects/mfe-app/src/app/pages/publisher/publisher-detail.module.ts",
       },
 
       // For hosts (please adjust)

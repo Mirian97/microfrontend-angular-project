@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavListComponent {
   navItems = [
-    { icon: 'deployed_code', location: '', label: 'Home' },
+    { icon: 'deployed_code', location: 'home', label: 'Home' },
     {
       icon: 'menu_book',
       location: 'publisher',
