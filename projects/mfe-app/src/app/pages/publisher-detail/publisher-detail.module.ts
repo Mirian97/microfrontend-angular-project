@@ -12,7 +12,7 @@ import { PublisherDetailComponent } from './publisher-detail.component';
     BrowserModule,
     RouterModule.forChild([
       {
-        path: 'publisher/:id',
+        path: '',
         component: PublisherDetailComponent,
       },
     ]),

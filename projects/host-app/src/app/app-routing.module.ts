@@ -9,17 +9,6 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'publisher',
-    loadChildren: () =>
-      loadRemoteModule({
-        remoteEntry: 'http://localhost:4300/remoteEntry.js',
-        remoteName: 'mfeApp',
-        exposedModule: './PublisherModule',
-      })
-        .then((m) => m.PublisherModule)
-        .catch((err) => console.error(err)),
-  },
-  {
     path: 'publisher/:id',
     loadChildren: () =>
       loadRemoteModule({
@@ -28,6 +17,17 @@ const routes: Routes = [
         exposedModule: './PublisherDetailModule',
       })
         .then((m) => m.PublisherDetailModule)
+        .catch((err) => console.error(err)),
+  },
+  {
+    path: 'publisher',
+    loadChildren: () =>
+      loadRemoteModule({
+        remoteEntry: 'http://localhost:4300/remoteEntry.js',
+        remoteName: 'mfeApp',
+        exposedModule: './PublisherModule',
+      })
+        .then((m) => m.PublisherModule)
         .catch((err) => console.error(err)),
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
