@@ -1,0 +1,9 @@
+<ul class="nav" *ngFor="let item of navItems">
+  <li>
+    <app-nav-item
+      [icon]="item.icon"
+      [location]="item.location"
+      [label]="item.label"
+    ></app-nav-item>
+  </li>
+</ul>

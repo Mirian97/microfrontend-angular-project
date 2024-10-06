@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Round");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
+
+:root {
+  --primary-color: #1d4f91;
+  --secondary-color: #e72887;
+  --tertiary-color: #e2eff7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1d2a;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  cursor: pointer !important;
+  all: unset;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}

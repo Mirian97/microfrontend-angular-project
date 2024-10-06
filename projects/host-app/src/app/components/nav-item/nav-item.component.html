@@ -1,0 +1,10 @@
+<button
+  class="sidebar-item"
+  [ngClass]="{ active: active }"
+  [routerLink]="location"
+>
+  <mat-icon>{{ icon }}</mat-icon>
+  <span>
+    {{ label }}
+  </span>
+</button>
