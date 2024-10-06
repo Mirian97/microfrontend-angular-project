@@ -5,42 +5,42 @@
       "name": "O'Reilly Media",
       "location": "USA",
       "founded": 1980,
-      "books_published": 2000
+      "books_published": 2023
     },
     {
       "id": 2,
       "name": "Pearson",
       "location": "UK",
       "founded": 1844,
-      "books_published": 5000
+      "books_published": 5587
     },
     {
       "id": 3,
       "name": "Penguin Random House",
       "location": "USA",
       "founded": 2013,
-      "books_published": 15000
+      "books_published": 1570
     },
     {
       "id": 4,
       "name": "HarperCollins",
       "location": "USA",
       "founded": 1989,
-      "books_published": 10000
+      "books_published": 34244
     },
     {
       "id": 5,
       "name": "Macmillan Publishers",
       "location": "UK",
       "founded": 1843,
-      "books_published": 8000
+      "books_published": 1223
     },
     {
       "id": 6,
       "name": "Hachette Livre",
       "location": "France",
       "founded": 1826,
-      "books_published": 6000
+      "books_published": 8999
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "name": "Springer Nature",
       "location": "Germany",
       "founded": 1842,
-      "books_published": 12000
+      "books_published": 18903
     },
     {
       "id": 9,
@@ -68,7 +68,7 @@
       "name": "Oxford University Press",
       "location": "UK",
       "founded": 1586,
-      "books_published": 10000
+      "books_published": 2750
     }
   ]
 }
