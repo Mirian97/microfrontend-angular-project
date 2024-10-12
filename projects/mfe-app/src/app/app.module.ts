@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BookModule } from './book/book.module';
 import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { LoadingComponent } from './components/loading/loading.component';
@@ -19,7 +20,7 @@ import { PublisherModule } from './publisher/publisher.module';
     PublisherFormComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, PublisherModule],
+  imports: [BrowserModule, AppRoutingModule, PublisherModule, BookModule],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
