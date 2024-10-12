@@ -10,7 +10,7 @@ export class NavListComponent {
     { icon: 'deployed_code', location: 'home', label: 'Home' },
     {
       icon: 'menu_book',
-      location: 'publisher',
+      location: 'book',
       label: 'Livros',
     },
     {
