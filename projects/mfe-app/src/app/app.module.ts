@@ -7,8 +7,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { PublisherFormComponent } from './components/publisher-form/publisher-form.component';
-import { PublisherDetailModule } from './pages/publisher-detail/publisher-detail.module';
-import { PublisherModule } from './pages/publisher/publisher.module';
+import { HomeComponent } from './home/home.component';
+import { PublisherModule } from './publisher/publisher.module';
 
 @NgModule({
   declarations: [
@@ -17,13 +17,9 @@ import { PublisherModule } from './pages/publisher/publisher.module';
     ButtonComponent,
     LoadingComponent,
     PublisherFormComponent,
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    PublisherModule,
-    PublisherDetailModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, PublisherModule],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })

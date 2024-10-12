@@ -1,45 +1,9 @@
-import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-
-const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'publisher',
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          loadRemoteModule({
-            remoteEntry: 'http://localhost:4300/remoteEntry.js',
-            remoteName: 'mfeApp',
-            exposedModule: './PublisherModule',
-          })
-            .then((m) => m.PublisherModule)
-            .catch((err) => console.error(err)),
-      },
-      {
-        path: ':id',
-        loadChildren: () =>
-          loadRemoteModule({
-            remoteEntry: 'http://localhost:4300/remoteEntry.js',
-            remoteName: 'mfeApp',
-            exposedModule: './PublisherDetailModule',
-          })
-            .then((m) => m.PublisherDetailModule)
-            .catch((err) => console.error(err)),
-      },
-    ],
-  },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
+import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(APP_ROUTES)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

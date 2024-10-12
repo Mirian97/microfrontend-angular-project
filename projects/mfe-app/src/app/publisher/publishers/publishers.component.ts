@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PublisherService } from '../../services/publisher.service';
-import { Publisher } from './../../types/publisher';
+import { Publisher } from '../../types/publisher';
 
 @Component({
-  selector: 'app-publisher',
-  templateUrl: './publisher.component.html',
-  styleUrl: './publisher.component.scss',
+  selector: 'app-publishers',
+  templateUrl: './publishers.component.html',
+  styleUrl: './publishers.component.scss',
 })
-export class PublisherComponent implements OnInit {
+export class PublishersComponent implements OnInit {
   publisherList$: Observable<Publisher[]> = new Observable<Publisher[]>();
 
   constructor(private publisherService: PublisherService) {}

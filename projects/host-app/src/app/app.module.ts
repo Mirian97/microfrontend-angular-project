@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavItemComponent } from './components/nav-item/nav-item.component';
@@ -17,7 +16,7 @@ import { HomeComponent } from './home/home.component';
     NavListComponent,
     SidebarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule, RouterModule],
+  imports: [BrowserModule, MatIconModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -11,7 +11,7 @@ import { Publisher } from '../../types/publisher';
 export class PublisherListComponent implements OnInit {
   publisherList$: Observable<Publisher[]> = new Observable<Publisher[]>();
 
-  constructor(private publisherService: PublisherService) {}
+  constructor(private readonly publisherService: PublisherService) {}
 
   ngOnInit(): void {
     this.publisherList$ = this.publisherService.get();

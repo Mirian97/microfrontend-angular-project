@@ -33,7 +33,6 @@ module.exports = {
       // exposes: {
       //     './Component': './projects/host-app/src/app/app.component.ts',
       // },
-
       // For hosts (please adjust)
       remotes: {
         mfeApp: "mfeApp@http://localhost:4300/remoteEntry.js",
