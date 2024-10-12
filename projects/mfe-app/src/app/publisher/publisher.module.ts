@@ -5,9 +5,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { PublisherItemComponent } from '../components/publisher-item/publisher-item.component';
 import { PublisherListComponent } from '../components/publisher-list/publisher-list.component';
+import { PublisherDetailComponent } from './publisher-detail/publisher-detail.component';
 import { PUBLISHER_ROUTES } from './publisher.routes';
 import { PublishersComponent } from './publishers/publishers.component';
-import { PublisherDetailComponent } from './publisher-detail/publisher-detail.component';
 
 @NgModule({
   declarations: [
