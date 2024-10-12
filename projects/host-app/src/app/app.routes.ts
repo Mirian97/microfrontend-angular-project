@@ -5,7 +5,6 @@ export const APP_ROUTES: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    pathMatch: 'full',
   },
   {
     path: '',
@@ -22,4 +21,5 @@ export const APP_ROUTES: Routes = [
         .catch((err) => console.error(err)),
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
