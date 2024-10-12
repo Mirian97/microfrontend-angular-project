@@ -18,13 +18,12 @@ export class NavItemComponent implements OnInit {
 
   ngOnInit() {
     this.setActiveBasedOnUrl(this.router.url);
-
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => this.setActiveBasedOnUrl(this.router.url));
   }
 
   setActiveBasedOnUrl(url: string): void {
-    this.active = url === `/${this.location}`;
+    this.active = url.startsWith(`/${this.location}`);
   }
 }
