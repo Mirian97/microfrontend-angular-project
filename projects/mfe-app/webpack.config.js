@@ -32,11 +32,11 @@ module.exports = {
       exposes: {
         "./PublisherModule":
           "./projects/mfe-app/src/app/publisher/publisher.module.ts",
+        "./BookModule": "./projects/mfe-app/src/app/book/book.module.ts",
       },
       // For hosts (please adjust)
       // remotes: {
       //     "hostApp": "http://localhost:4200/remoteEntry.js",
-
       // },
       shared: share({
         "@angular/core": {

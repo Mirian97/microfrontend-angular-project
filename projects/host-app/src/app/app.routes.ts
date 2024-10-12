@@ -14,5 +14,12 @@ export const APP_ROUTES: Routes = [
         .then((m) => m.PublisherModule)
         .catch((err) => console.error(err)),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('mfeApp/BookModule')
+        .then((m) => m.BookModule)
+        .catch((err) => console.error(err)),
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
