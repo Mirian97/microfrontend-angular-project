@@ -1,1 +1,14 @@
-<p>publisher-item works!</p>
+<button class="publisher-item" [routerLink]="['/publisher', publisher.id]">
+  <h3 class="publisher-item--title">{{ publisher.name }}</h3>
+  <p class="info-item">
+    <span>Fundada em:</span>
+    <span> {{ publisher.founded }}</span>
+  </p>
+  <p class="info-item">
+    <span>Localização:</span> <span>{{ publisher.location }}</span>
+  </p>
+  <p class="info-item">
+    <span>Livros Publicados:</span>
+    <span>{{ publisher.books_published }}</span>
+  </p>
+</button>

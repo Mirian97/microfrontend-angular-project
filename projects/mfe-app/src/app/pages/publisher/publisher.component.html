@@ -1,21 +1,2 @@
 <h1 class="title-page">Editoras</h1>
-<div class="publisher-list">
-  <button
-    class="publisher-item"
-    *ngFor="let publisher of publisherList$ | async"
-    [routerLink]="['/publisher', publisher.id]"
-  >
-    <h3 class="publisher-item--title">{{ publisher.name }}</h3>
-    <p class="info-item">
-      <span>Fundada em:</span>
-      <span> {{ publisher.founded }}</span>
-    </p>
-    <p class="info-item">
-      <span>Localização:</span> <span>{{ publisher.location }}</span>
-    </p>
-    <p class="info-item">
-      <span>Livros Publicados:</span>
-      <span>{{ publisher.books_published }}</span>
-    </p>
-  </button>
-</div>
+<app-publisher-list></app-publisher-list>
