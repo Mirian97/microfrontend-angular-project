@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs';
 import { PublisherService } from '../../services/publisher.service';
 import { Publisher } from '../../types/publisher';
 
@@ -17,9 +18,15 @@ export class PublisherDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const publisherId = Number(this.route.snapshot.params['id']);
-    this.publisherService.getById(publisherId).subscribe((data) => {
-      this.publisher = data;
-    });
+    this.route.params
+      .pipe(
+        switchMap((params) => {
+          const publisherId = Number(params['id']);
+          return this.publisherService.getById(publisherId);
+        })
+      )
+      .subscribe((publisher) => {
+        this.publisher = publisher;
+      });
   }
 }
